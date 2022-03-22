@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/14f4815201.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pokedéx</title>
+  </head>
+  <body class="index-body">
+    <header>
+      <!-- <h1 class="title">Pokedéx</h1> -->
+      <a href="/">
+        <img
+          src="https://fontmeme.com/permalink/220321/d1611eddba3f9d8b802d2f21f842a739.png"
+          alt="Pokedéx"
+          id="pokedex-img"
+        />
+      </a>
+    </header>
+    <main>
+      <div class="main-container">
+        <% pokedex.forEach(element => { %>
+        <div class="card-container">
+          <div class="card">
+            <div class="header-card">
+              <span class="card-id"><%= element.id %></span>
+              <span class="card-num"><%= element.num %></span>
+            </div>
+            <div>
+              <a href="detalhes/<%= element.id %>"
+                ><img
+                  src="<%= element.img %>"
+                  class="card-img-top"
+                  alt="Cartão com informações do Pokemon <%= element.name %>"
+              /></a>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title"><b><%= element.name %></b></h2>
+              <p class="card-text"><%= element.type %></p>
+              <!-- <i class="fas fa-bolt"></i> <br /> -->
+            </div>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </main>
+  </body>
+</html>

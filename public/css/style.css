@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body.index-body {
+  width: 100%;
+  background-image: url(../img/Wallpaper.jpg);
+  background-repeat: initial;
+  background-size: contain;
+}
+
+body.detalhes-body {
+  width: 100%;
+  background-image: url(../img/Wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: Pokefont;
+  src: url(../fonts/Pokemon\ Hollow.ttf);
+  font-weight: bold;
+}
+
+header {
+  /* background-color: aquamarine; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+img#pokedex-img {
+  width: 400px;
+  height: 120px;
+}
+
+h1.title {
+  text-align: center;
+  font-family: Pokefont;
+  font-size: 40px;
+}
+
+div.main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------CARDS----------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------*/
+
+img.card-img-top {
+  /* border: rgb(0, 0, 0) solid 1px; */
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  object-fit: cover;
+  margin-bottom: 5px;
+  padding: 10px 10px;
+}
+
+i {
+  margin-top: 5px;
+  width: 10px;
+  height: 10px;
+  color: rgb(0, 0, 0);
+}
+
+div.card {
+  display: flex;
+  flex-direction: column;
+  border: #111 solid 2px;
+  width: 250px;
+  height: 400px;
+  box-shadow: 5px 1px 2px black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  background-color:#578840d0;
+  /* opacity: 70%; */
+}
+
+div.card-body {
+  text-align: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+div.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+div.card:hover {
+  box-shadow: 10px 5px 5px black;
+  background-color:#578840;
+  transition-duration: 0.7s;
+  transition-timing-function: linear;
+  transform: scale(1.1);
+}
+
+div.card:hover span{
+  color: black;
+}
+
+h3.card-title {
+  text-align: center;
+}
+
+p.card-text {
+  font-size: 15px;
+  padding-top: 3px;
+}
+
+div.card-header {
+  padding-top: 5px;
+  text-align: center;
+}
+
+div.detail-btn{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+  padding-bottom: 5px;
+  font-size: 17px;
+  color: #111;
+}
+
+span {
+  justify-content: space-between;
+  margin: 10px 50px;
+  color: #5788409c;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------DETALHES---------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------*/
+
+main {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container-detail
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 1080px;
+  background-color: #5788409c;
+  border: black solid 5px;
+}
+
+.main-container-detail:hover {
+  background-color: #578840 ;
+  transition-duration: 1s;
+}
+
+div.pokemonImg {
+  width: 500px;
+  height: 500px;
+}
+
+img.pokeImg {
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+}
+
+div.pokeInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+}
+
+div.pokeInfo h1 {
+  font-size: 60px;
+}
+
+div.pokeInfo h2 {
+  font-size: 50px;
+}
+
+div.pokeInfo h3 {
+  font-size: 30px;
+}

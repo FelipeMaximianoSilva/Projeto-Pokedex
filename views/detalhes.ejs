@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/14f4815201.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Pokedéx</title>
+  </head>
+  <body class="detalhes-body">
+    <header>
+      <a href="/">
+        <img
+          src="https://fontmeme.com/permalink/220321/d1611eddba3f9d8b802d2f21f842a739.png"
+          alt="Pokedéx"
+          id="pokedex-img"
+        />
+      </a>
+    </header>
+    <!-- <div id="welcome-style">
+      <h1 class="title">Seja Bem vindo a Pokedéx!</h1>
+    </div> -->
+    <main>
+      <div class="main-container-detail">
+        <% pokemonAtual.forEach(element => { %>
+        <div class="pokemonImg">
+          <img
+            src="<%= element.img %>"
+            class="pokeImg"
+            alt="Imagem do Pokemon <%= element.name %>"
+          />
+        </div>
+        <div class="pokeInfo">
+          <h1><%= element.name %></h1>
+          <br />
+          <h2><%= element.type %></h2>
+          <br />
+          <h3>Altura: <%= element.height %></h3>
+          <br />
+          <h3>Peso: <%= element.weight %></h3>
+          <br />
+          <h3>Fraquezas: <%= element.weaknesses %></h3>
+          <br />
+        </div>
+      </div>
+        <% }) %>
+      </div>
+    </main>
+  </body>
+</html>
